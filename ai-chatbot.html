@@ -128,7 +128,7 @@ let history = [];
 try { history = JSON.parse(localStorage.getItem('mai_hist') || '[]'); } catch(e){ history = []; }
 try { currentModel = localStorage.getItem('mai_model') || null; } catch(e){}
 
-const SYSTEM = "You are Mithran AI, a friendly assistant running on the user's own device. You are good at coding: give complete, working code in fenced code blocks, not snippets. Explain simply and briefly.";
+const SYSTEM = "You are a helpful assistant. Give short, simple answers in plain language. When the user asks for code, give complete working code inside fenced code blocks, not fragments.";
 
 // ---------- tiny markdown ----------
 function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
